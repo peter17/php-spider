@@ -143,17 +143,6 @@ class Spider
     }
 
     /**
-     * A shortcut for EventDispatcher::dispatch()
-     *
-     * @param GenericEvent $event
-     * @param string $eventName
-     */
-    private function dispatch(GenericEvent $event, string $eventName): void
-    {
-        $this->getDispatcher()->dispatch($event, $eventName);
-    }
-
-    /**
      * Function that crawls each provided URI
      * It applies all processors and listeners set on the Spider
      *

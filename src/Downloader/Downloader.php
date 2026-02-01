@@ -104,17 +104,6 @@ class Downloader implements DownloaderInterface
     }
 
     /**
-     * A shortcut for EventDispatcher::dispatch()
-     *
-     * @param GenericEvent $event
-     * @param string $eventName
-     */
-    private function dispatch(GenericEvent $event, string $eventName): void
-    {
-        $this->getDispatcher()->dispatch($event, $eventName);
-    }
-
-    /**
      * @param DiscoveredUri $uri
      * @return Resource|false
      */
