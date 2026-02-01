@@ -21,4 +21,15 @@ trait DispatcherTrait
 
         return $this->dispatcher;
     }
+
+    /**
+     * A shortcut for EventDispatcher::dispatch()
+     *
+     * @param object $event
+     * @param string $eventName
+     */
+    protected function dispatch(object $event, string $eventName): void
+    {
+        $this->getDispatcher()->dispatch($event, $eventName);
+    }
 }
