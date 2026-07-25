@@ -126,7 +126,11 @@ class ResourceBuilder
     public function build(): Resource
     {
         $discoveredUri = new DiscoveredUri(new Uri($this->uri), $this->depth);
-        $response = new Response($this->statusCode, $this->headers ?: '', $this->body);
+        $headers = array_filter(
+            $this->headers,
+            static fn ($value) => !is_array($value) || $value !== []
+        );
+        $response = new Response($this->statusCode, $headers, $this->body);
         return new Resource($discoveredUri, $response);
     }
 
