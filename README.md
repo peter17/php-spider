@@ -1,7 +1,10 @@
-[![Build Status](https://github.com/mvdbos/php-spider/actions/workflows/php.yml/badge.svg?branch=master)](https://github.com/mvdbos/php-spider/actions/workflows/php.yml)
-[![Latest Stable Version](https://poser.pugx.org/vdb/php-spider/v)](https://packagist.org/packages/vdb/php-spider)
-[![Total Downloads](https://poser.pugx.org/vdb/php-spider/downloads)](https://packagist.org/packages/vdb/php-spider)
-[![License](https://poser.pugx.org/vdb/php-spider/license)](https://packagist.org/packages/vdb/php-spider)
+[![Build Status](https://github.com/peter17/php-spider/actions/workflows/php.yml/badge.svg?branch=2.0)](https://github.com/peter17/php-spider/actions/workflows/php.yml)
+
+READ THIS FIRST
+======
+This is a maintained fork of https://github.com/mvdbos/php-spider
+
+Unlike the original, **it is for PHP >= 8.5** only and does not depend on https://github.com/mvdbos/vdb-uri
 
 
 PHP-Spider Features
